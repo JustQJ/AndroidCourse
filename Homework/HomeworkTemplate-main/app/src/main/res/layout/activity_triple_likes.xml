@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".homework2.triple_Activity"
+    android:orientation="vertical"
+
+    >
+
+    <!-- 点赞-->
+
+    <ImageView
+
+        android:id="@+id/like1"
+        app:tint="@color/red"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="303dp"
+        android:layout_marginLeft="34dp"
+
+        android:src="@drawable/appraise" />
+    <ImageView
+
+        android:id="@+id/like"
+        app:tint="@color/heavygrey"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="303dp"
+        android:layout_marginLeft="34dp"
+        android:src="@drawable/appraise" />
+    <!--踩-->
+
+    <ImageView
+        android:id="@+id/dislike1"
+        app:tint="@color/red"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="303dp"
+        android:layout_marginLeft="98dp"
+        android:src="@drawable/dislike" />
+    <ImageView
+        android:id="@+id/dislike"
+        app:tint="@color/heavygrey"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="303dp"
+        android:layout_marginLeft="98dp"
+        android:src="@drawable/dislike" />
+
+
+
+    <RelativeLayout
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="298dp"
+        android:layout_marginLeft="164dp"
+        >
+
+        <com.bytedance.jstu.homework.homework2.Cycle
+            android:id="@+id/cir1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <com.bytedance.jstu.homework.homework2.MyArc
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+    </RelativeLayout>
+
+    <!--硬币-->
+    <ImageView
+        android:id="@+id/memony1"
+        app:tint="@color/red"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="303dp"
+        android:layout_marginLeft="168dp"
+        android:src="@drawable/money" />
+
+    <ImageView
+        android:id="@+id/memony"
+        app:tint="@color/heavygrey"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="303dp"
+        android:layout_marginLeft="168dp"
+        android:src="@drawable/money" />
+
+    <RelativeLayout
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="298dp"
+        android:layout_marginLeft="228dp"
+        >
+
+        <com.bytedance.jstu.homework.homework2.Cycle
+            android:id="@+id/cir2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <com.bytedance.jstu.homework.homework2.MyArc
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+
+    <!--收藏-->
+    <ImageView
+        android:id="@+id/collect1"
+        app:tint="@color/red"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="303dp"
+        android:layout_marginLeft="233dp"
+        android:src="@drawable/colloect" />
+    <ImageView
+        android:id="@+id/collect"
+        app:tint="@color/heavygrey"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="303dp"
+        android:layout_marginLeft="233dp"
+        android:src="@drawable/colloect" />
+
+    <!--返回-->
+
+    <ImageView
+        android:id="@+id/returning"
+        app:tint="@color/heavygrey"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="300dp"
+        android:src="@drawable/returning" />
+
+
+
+</RelativeLayout>

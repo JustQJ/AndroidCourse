@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/littlegrey"
+       >
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+
+        android:textSize="23dp"
+        android:textStyle="bold"
+        android:text="做作业"
+        />
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:textSize="20dp"
+
+
+            />
+    <TextView
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+
+        android:layout_below="@id/info"
+        android:layout_marginTop="5dp"
+        android:text="开始时间: 2022-10-2"
+        android:textSize="15dp"
+        />
+    <TextView
+        android:id="@+id/end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+
+        android:layout_below="@id/start"
+        android:layout_marginTop="5dp"
+        android:text="结束时间: 2022-10-2"
+        android:textSize="15dp"
+        />
+
+        <ImageView
+            android:id="@+id/delete"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@id/start"
+            android:layout_marginLeft="350dp"
+            android:layout_marginTop="-10dp"
+            android:src="@drawable/delete" />
+
+        <ImageView
+            android:id="@+id/modify"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="-10dp"
+            android:layout_marginRight="-330dp"
+            android:layout_below="@id/start"
+            android:layout_toLeftOf="@id/delete"
+            android:src="@drawable/modify" />
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/start"
+        android:layout_marginTop="-10dp"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@+id/modify"
+        android:src="@drawable/process"
+     />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

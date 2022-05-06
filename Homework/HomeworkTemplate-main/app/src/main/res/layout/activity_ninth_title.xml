@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".homework1.titles.NinthTitleActivity"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <FrameLayout
+            android:layout_width="35dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:background="@drawable/raduis"
+            android:topLeftRadius="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="简单"
+                android:textColor="@color/green"
+                android:textSize="15dp" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="50dp"
+            android:text="| 1592465 提交  |  919038 通过"
+            android:textSize="16dp"/>
+    </FrameLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="给你一个整数 x ，如果 x 是一个回文整数，返回 true ；否则，返回 false 。"
+       />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="回文数是指正序（从左向右）和倒序（从右向左）读都是一样的整数。\n\n    例如，121 是回文，而 123 不是。"
+        />
+
+
+
+
+
+
+</LinearLayout>

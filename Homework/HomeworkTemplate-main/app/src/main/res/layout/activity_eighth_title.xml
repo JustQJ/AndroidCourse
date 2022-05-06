@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".homework1.titles.EighthTitleActivity"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <FrameLayout
+            android:layout_width="35dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:background="@drawable/raduis"
+            android:topLeftRadius="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="中等"
+                android:textColor="@color/croci"
+                android:textSize="15dp" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="50dp"
+            android:text="| 1880880 提交  |  409076 通过"
+            android:textSize="16dp"/>
+    </FrameLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="请你来实现一个 myAtoi(string s) 函数，使其能将字符串转换成一个 32 位有符号整数（类似 C/C++ 中的 atoi 函数）。"
+       />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="函数 myAtoi(string s) 的算法如下："
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="10dp"
+        android:text="1.读入字符串并丢弃无用的前导空格\n2.检查下一个字符（假设还未到字符末尾）为正还是负号，读取该字符（如果有）。 确定最终结果是负数还是正数。 如果两者都不存在，则假定结果为正。\n3.读入下一个字符，直到到达下一个非数字字符或到达输入的结尾。字符串的其余部分将被忽略。\n4.将前面步骤读入的这些数字转换为整数（即，&quot;12&quot;-> 123， &quot;0032&quot; -> 32）。如果没有读入数字，则整数为 0 。必要时更改符号（从步骤 2 开始）。\n5.如果整数数超过 32 位有符号整数范围 [−231,  231 − 1] ，需要截断这个整数，使其保持在这个范围内。具体来说，小于 −231 的整数应该被固定为 −231 ，大于 231 − 1 的整数应该被固定为 231 − 1 。\n6.返回整数作为最终结果。
+       "
+        />
+
+
+
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".homework1.titles.ThirdTitleActivity"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <FrameLayout
+            android:layout_width="35dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:background="@drawable/raduis"
+            android:topLeftRadius="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="中等"
+                android:textColor="@color/croci"
+                android:textSize="15dp" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="50dp"
+            android:text="| 3945395 提交  |  1519733 通过"
+            android:textSize="16dp"/>
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="给定一个字符串 s ，请你找出其中不含有重复字符的最长子串的长度。"
+       />
+
+
+</LinearLayout>

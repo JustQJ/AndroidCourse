@@ -1,0 +1,660 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".homework1.MainOneActivity"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/border"
+        android:padding="10dp"
+        >
+        <TextView
+            android:id="@+id/all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全部"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:id="@+id/algorithm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="算法"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="122dp"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:id="@+id/database"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="数据库"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="223dp"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:id="@+id/shell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shell"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="325dp"
+            android:layout_marginTop="5dp"
+            />
+
+
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".MainActivity"
+
+            >
+
+
+            <RelativeLayout
+                android:id="@+id/firstLine"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_margin="10dp">
+
+                <FrameLayout
+                    android:id="@+id/f1"
+                    android:layout_width="25dp"
+                    android:layout_height="20dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/raduis"
+                    android:topLeftRadius="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="简单"
+                        android:textColor="@color/green"
+                        android:textSize="10dp" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/f2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:layout_toRightOf="@id/f1"
+                    android:text="1.两数之和"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/f3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/f2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="4dp"
+                    android:text="  —      | 题解 16302  |  通过率 52% "
+                    android:textColor="@color/grey" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/lock"
+                    android:layout_marginLeft="330dp"
+                    android:layout_marginTop="25dp"
+
+                    />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/secondLine"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_margin="10dp"
+                >
+
+                <FrameLayout
+                    android:id="@+id/s1"
+                    android:layout_width="25dp"
+                    android:layout_height="20dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/raduis"
+                    android:topLeftRadius="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="中等"
+                        android:textColor="@color/croci"
+                        android:textSize="10dp" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/s2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:layout_toRightOf="@id/s1"
+                    android:text="2.两数相加"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/s3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/s2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="4dp"
+                    android:text="  —      | 题解 8519  |  通过率 41% "
+                    android:textColor="@color/grey" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="330dp"
+                    android:layout_marginTop="25dp"
+                    android:src="@drawable/lock"
+
+
+                    />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/thirdLine"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_margin="10dp">
+
+                <FrameLayout
+                    android:id="@+id/t1"
+                    android:layout_width="25dp"
+                    android:layout_height="20dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/raduis"
+                    android:topLeftRadius="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="中等"
+                        android:textColor="@color/croci"
+                        android:textSize="10dp" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/t2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:layout_toRightOf="@id/t1"
+                    android:text="3.无重复字符的最长字串"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/f3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/t2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="4dp"
+                    android:text="  —      | 题解 9135  |  通过率 38% "
+                    android:textColor="@color/grey" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="330dp"
+                    android:layout_marginTop="25dp"
+                    android:src="@drawable/lock"
+
+                    />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/forthLine"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_margin="10dp">
+
+                <FrameLayout
+                    android:id="@+id/fr1"
+                    android:layout_width="25dp"
+                    android:layout_height="20dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/raduis"
+                    android:topLeftRadius="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="困难"
+                        android:textColor="@color/red"
+                        android:textSize="10dp" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/fr2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:layout_toRightOf="@id/fr1"
+                    android:text="4.寻找两个正序数组的中位数"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/fr3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/fr2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="4dp"
+                    android:text="  —      | 题解 4653  |  通过率 41% "
+                    android:textColor="@color/grey" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/lock"
+                    android:layout_marginLeft="330dp"
+                    android:layout_marginTop="25dp"
+
+                    />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fifthLine"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_margin="10dp">
+
+                <FrameLayout
+                    android:id="@+id/fi1"
+                    android:layout_width="25dp"
+                    android:layout_height="20dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/raduis"
+                    android:topLeftRadius="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="中等"
+                        android:textColor="@color/croci"
+                        android:textSize="10dp" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/fi2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:layout_toRightOf="@id/fi1"
+                    android:text="5.最长回文字串"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/fi3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/fi2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="4dp"
+                    android:text="  —      | 题解 4881  |  通过率 36% "
+                    android:textColor="@color/grey" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/lock"
+                    android:layout_marginLeft="330dp"
+                    android:layout_marginTop="25dp"
+
+                    />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/sixthLine"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_margin="10dp">
+
+                <FrameLayout
+                    android:id="@+id/six1"
+                    android:layout_width="25dp"
+                    android:layout_height="20dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/raduis"
+                    android:topLeftRadius="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="中等"
+                        android:textColor="@color/croci"
+                        android:textSize="10dp" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/six2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:layout_toRightOf="@id/six1"
+                    android:text="6.Z 字形变换"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/six3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/six2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="4dp"
+                    android:text="  —      | 题解 3182  |  通过率 51% "
+                    android:textColor="@color/grey" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/lock"
+                    android:layout_marginLeft="330dp"
+                    android:layout_marginTop="25dp"
+
+                    />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/seventhLine"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_margin="10dp">
+
+                <FrameLayout
+                    android:id="@+id/seven1"
+                    android:layout_width="25dp"
+                    android:layout_height="20dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/raduis"
+                    android:topLeftRadius="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="中等"
+                        android:textColor="@color/croci"
+                        android:textSize="10dp" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/seven2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:layout_toRightOf="@id/seven1"
+                    android:text="7.整数反转"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/seven3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/seven2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="4dp"
+                    android:text="  —      | 题解 5915  |  通过率 35% "
+                    android:textColor="@color/grey" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/lock"
+                    android:layout_marginLeft="330dp"
+                    android:layout_marginTop="25dp"
+
+                    />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/eighthLine"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_margin="10dp">
+
+                <FrameLayout
+                    android:id="@+id/eig1"
+                    android:layout_width="25dp"
+                    android:layout_height="20dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/raduis"
+                    android:topLeftRadius="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="中等"
+                        android:textColor="@color/croci"
+                        android:textSize="10dp" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/eig2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:layout_toRightOf="@id/eig1"
+                    android:text="8.字符串转换整数"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/eig3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/eig2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="4dp"
+                    android:text="  —      | 题解 3108  |  通过率 21% "
+                    android:textColor="@color/grey" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/lock"
+                    android:layout_marginLeft="330dp"
+                    android:layout_marginTop="25dp"
+
+                    />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/ninthLine"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_margin="10dp">
+
+                <FrameLayout
+                    android:id="@+id/nin1"
+                    android:layout_width="25dp"
+                    android:layout_height="20dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/raduis"
+                    android:topLeftRadius="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="简单"
+                        android:textColor="@color/green"
+                        android:textSize="10dp" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/nin2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:layout_toRightOf="@id/nin1"
+                    android:text="9.回文数"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/nin3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/nin2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="4dp"
+                    android:text="  —      | 题解 5775  |  通过率 57% "
+                    android:textColor="@color/grey" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/lock"
+                    android:layout_marginLeft="330dp"
+                    android:layout_marginTop="25dp"
+
+                    />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/tenthLine"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_margin="10dp">
+
+                <FrameLayout
+                    android:id="@+id/ten1"
+                    android:layout_width="25dp"
+                    android:layout_height="20dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/raduis"
+                    android:topLeftRadius="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="困难"
+                        android:textColor="@color/red"
+                        android:textSize="10dp" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/ten2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:layout_toRightOf="@id/ten1"
+                    android:text="10.正则表达式匹配"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/ten3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ten2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="4dp"
+                    android:text="  —      | 题解 1469  |  通过率 31% "
+                    android:textColor="@color/grey" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/lock"
+                    android:layout_marginLeft="330dp"
+                    android:layout_marginTop="25dp"
+
+                    />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

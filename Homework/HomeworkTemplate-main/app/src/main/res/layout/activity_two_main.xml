@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".homework2.MainTwoActivity"
+    android:orientation="vertical"
+
+    >
+
+    <!-- 点赞-->
+
+    <!--踩-->
+
+    <!--硬-->
+
+    <!--收藏-->
+
+    <!--返回-->
+
+
+
+
+    <TextView
+        android:id="@+id/first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="一键三连页面"
+        android:textSize="25dp"
+        android:background="@color/teal_200"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="130dp"
+        />
+
+
+
+</RelativeLayout>
