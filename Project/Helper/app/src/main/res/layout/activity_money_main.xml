@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+   android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/background10"
+
+    >
+
+
+<com.xuexiang.xui.widget.actionbar.TitleBar
+    android:id="@+id/moneytitle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:tb_actionPadding="20dp"
+    app:tb_barHeight="50dp"
+    app:tb_leftText="返回"
+    app:tb_titleText="收支记录"
+    />
+
+<androidx.core.widget.NestedScrollView
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/incomechart"
+            android:layout_width="match_parent"
+            android:layout_height="330dp"
+            android:layout_marginTop="20dp"
+            app:layout_scrollFlags="scroll|enterAlways"
+            />
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/outcomechart"
+            android:layout_width="match_parent"
+            android:layout_height="330dp"
+            android:layout_marginTop="10dp"
+            app:layout_scrollFlags="scroll|enterAlways"
+            />
+
+        <RelativeLayout
+            android:id="@+id/lin1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/config_margin_10dp"
+            android:layout_marginRight="@dimen/config_margin_10dp"
+            android:layout_marginTop="@dimen/config_margin_5dp"
+            >
+            <TextView
+                android:id="@+id/t1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="本月总收支"
+                android:layout_alignParentLeft="true"
+                android:textSize="20dp"
+                />
+            <TextView
+                android:id="@+id/t2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="总支出: 530"
+                android:textColor="@color/green"
+                android:layout_alignParentRight="true"
+                />
+            <TextView
+                android:id="@+id/t3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="总收入：340"
+                android:textColor="@color/red"
+                android:layout_toLeftOf="@+id/t2"
+                android:layout_marginRight="@dimen/config_margin_10dp"
+                />
+
+
+
+        </RelativeLayout>
+
+
+
+    <com.yanzhenjie.recyclerview.SwipeRecyclerView
+        android:id="@+id/recycler_record_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        tools:listitem="@android:layout/simple_list_item_2"
+       />
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

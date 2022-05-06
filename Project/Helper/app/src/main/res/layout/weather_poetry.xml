@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:layout_marginLeft="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="1"
+        android:textSize="30sp"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="北方有佳人"
+        android:id="@+id/tv_poetry1"/>
+
+    <TextView
+        android:id="@+id/tv_poetry2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/tv_poetry1"
+        android:clickable="true"
+        android:ems="1"
+        android:focusable="true"
+        android:paddingTop="40dp"
+        android:text="絕世而獨立"
+        android:textSize="30sp" />
+
+
+
+
+</RelativeLayout>

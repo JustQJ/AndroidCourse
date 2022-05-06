@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.clans.fab.FloatingActionMenu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fab_menu"
+    style="@style/FabMenu"
+    android:layout_gravity="bottom|end"
+    android:layout_margin="20dp"
+    app:menu_colorNormal="@color/heavygrey"
+    app:menu_colorPressed="@color/littlegrey"
+    app:menu_colorRipple="@color/black"
+    app:menu_labels_ellipsize="end"
+    app:menu_labels_singleLine="true"
+    tools:ignore="RtlHardcoded">
+
+    <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/batheButton"
+        style="@style/FabMenu.Buttons"
+        android:src="@drawable/bathe"
+        app:fab_label="洗澡间查询"/>
+
+    <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/inoutButton"
+        style="@style/FabMenu.Buttons"
+        android:src="@drawable/inoutmoney"
+
+        app:fab_label="收支记录"/>
+
+    <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/todoButton"
+        style="@style/FabMenu.Buttons"
+        android:src="@drawable/todolist"
+        app:fab_label="待办事项"/>
+
+
+
+</com.github.clans.fab.FloatingActionMenu>

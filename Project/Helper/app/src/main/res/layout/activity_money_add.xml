@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <com.xuexiang.xui.widget.actionbar.TitleBar
+        android:id="@+id/titlebar_moneyaddtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tb_actionPadding="20dp"
+        app:tb_barHeight="50dp"
+        app:tb_leftText="返回"
+        app:tb_titleText="小计一笔"
+
+        />
+
+    <com.xuexiang.xui.widget.tabbar.TabSegment
+
+        android:id="@+id/tabSegment"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:ts_normal_color="@color/green"
+        android:background="@drawable/background24"/>
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/contentViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fitsSystemWindows="true"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

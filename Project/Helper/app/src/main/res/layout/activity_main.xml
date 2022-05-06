@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg1"
+        app:srlEnableAutoLoadMore="true"
+        app:srlEnableLoadMore="true">
+
+
+
+            <com.scwang.smartrefresh.layout.header.ClassicsHeader
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srlClassicsSpinnerStyle="FixedBehind"
+                app:srlDrawableArrowSize="20dp"
+                app:srlDrawableMarginRight="20dp"
+                app:srlDrawableProgressSize="20dp"
+                app:srlEnableLastTime="true"
+                app:srlFinishDuration="500"
+                app:srlTextSizeTime="10dp"
+                app:srlTextSizeTitle="16sp"
+                app:srlTextTimeMarginTop="2dp"
+                app:srlDrawableProgress="@drawable/headerbg"
+                />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+            <ImageView
+                android:id="@+id/weatherBg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                />
+        <include
+            android:id="@+id/weatherTitle"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/config_margin_10dp"
+            layout="@layout/weather_title"
+            />
+
+
+            <include
+                android:id="@+id/weatherNow"
+                android:layout_marginTop="@dimen/config_margin_10dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                layout="@layout/weather_now"
+                android:layout_below="@+id/weatherTitle"
+                />
+
+            <include
+                android:id="@+id/weatherPoetry"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                layout="@layout/weather_poetry"
+                android:layout_below="@+id/weatherNow"
+                />
+
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewpager_weather"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_alignParentBottom="true" />
+
+            <include
+                android:id="@+id/menutools"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_above="@+id/viewpager_weather"
+                android:layout_marginLeft="220dp"
+                android:layout_marginBottom="30dp"
+                layout="@layout/menu_tools"
+
+                />
+
+
+
+    </RelativeLayout>
+
+
+
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

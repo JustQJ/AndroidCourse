@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_margin="10dp"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/ll">
+
+            <TextView
+                android:layout_marginTop="-10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="60sp"
+                android:id="@+id/tv_weather_temperature"
+                android:layout_gravity="center"
+                android:text="22°"/>
+
+            <TextView
+                android:layout_marginTop="-13dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="空气良 100"
+                android:layout_gravity="center"
+                android:id="@+id/tv_weather_aqi"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_marginLeft="10dp"
+            android:layout_width="2dp"
+            android:layout_height="100dp"
+            android:background="@color/cardview_dark_background"
+            android:layout_toEndOf="@id/ll"
+            android:id="@+id/v_line"/>
+
+        <ImageView
+
+            android:layout_marginLeft="20dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@id/v_line"
+            android:layout_alignTop="@id/v_line"
+            android:id="@+id/iv_weather_icon"/>
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_weather_icon"
+            android:layout_toEndOf="@id/v_line"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:ems="2"
+            android:text="云"
+            android:id="@+id/tv_weatherstate"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="money_item_inout_values">
+        <item>收入</item>
+        <item>支出</item>
+    </string-array>
+
+
+    <string-array name="outmoney_item_class_values">
+        <item>餐饮</item>
+        <item>出游</item>
+        <item>网购</item>
+        <item>学习</item>
+        <item>零食</item>
+        <item>其他</item>
+    </string-array>
+
+    <string-array name="inmoney_item_class_values">
+        <item>奖学金</item>
+        <item>勤工俭学</item>
+        <item>投资</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="batharea">
+        <item>东</item>
+        <item>西</item>
+    </string-array>
+</resources>

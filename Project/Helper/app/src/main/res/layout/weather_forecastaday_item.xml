@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:textSize="16sp"
+        android:text="9-30"
+        android:textColor="#fff"
+        android:id="@+id/forecast_day_date"/>
+
+    <TextView
+        android:layout_gravity="center"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textColor="#fff"
+        android:id="@+id/forecast_day_weather"
+        android:gravity="center"/>
+
+
+    <TextView
+        android:layout_gravity="center"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="10℃"
+        android:textColor="#fff"
+        android:id="@+id/forecast_day_mintemperature"/>
+
+    <TextView
+        android:layout_gravity="center"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="25℃"
+        android:textColor="#fff"
+        android:id="@+id/forecast_day_maxtemperature"/>
+
+</LinearLayout>
